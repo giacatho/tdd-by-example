@@ -1,4 +1,4 @@
-package tdd.by.example.chap01;
+package tdd.by.example.chap02;
 
 public class Dollar {
 	public double amount;
@@ -7,7 +7,7 @@ public class Dollar {
 		this.amount = amount;
 	}
 	
-	void times(int multiplier) {
-		amount *= multiplier;
+	Dollar times(int multiplier) {
+		return new Dollar(amount * multiplier);
 	}
 }
